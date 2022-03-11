@@ -1,0 +1,91 @@
+.about {
+    padding: 2rem;
+    background: #fff;
+  }
+
+.about__container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+.about-me-text{
+  padding: 15px;
+  text-align: justify;
+  line-height: 1.8;
+  width: 500px;
+  float: left;
+}
+
+.about-me-icons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coding-gif{
+    height: 325px;  
+    width: 350px; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.skill-list li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.skill-list li::before{
+  content: "▹";
+  padding-right: 10px;
+  left: 0px;
+  line-height: 12px;
+}
+
+p{
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 960px) {
+  .about-me-text{
+    padding: 0 15px;
+    text-align: justify;
+    line-height: 1.5;
+    width: 350px;
+    float: left;
+  }
+
+  .coding-gif{
+    height: 220px;  
+    width: 250px; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+}
+
+@media screen and (max-width: 410px){
+  .about {
+    padding: 1rem;
+    background: #fff;
+}
+  .about-me-text{
+    padding: 0 20px;
+    text-align: justify;
+    line-height: 1.5;
+    width: 350px;
+    float: left;
+  }
+}
